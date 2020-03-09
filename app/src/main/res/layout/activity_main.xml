@@ -1,37 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="10dp"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/button_player"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/play"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358" />
+        android:orientation="horizontal">
 
-    <ImageButton
-        android:id="@+id/button_player2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="@drawable/sd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/sd" />
+        <ImageButton
+            android:id="@+id/button_player"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/coolio" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/button_player2"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/travis" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/button_player3"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/gorillaz" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/button_player4"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/cube" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/button_player5"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/luniz" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/button_player6"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            android:background="@drawable/vintage" />
+    </LinearLayout>
 
 
 </LinearLayout>
